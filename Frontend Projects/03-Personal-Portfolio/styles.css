@@ -73,7 +73,7 @@
 .landing--text {
   text-align: center;
   width: 100%;
-  color: color-mix(in hsl shorter hue, gray 40%, black 60%);
+  color: #5e5e5e;
 }
 
 .projects {
@@ -206,7 +206,9 @@
   .navigation--items {
     font-size: 14px;
   }
-
+  .landing-page {
+    grid-template-columns: 1fr;
+  }
   .landing-senction {
     height: 20dvh;
   }
@@ -231,9 +233,9 @@
   }
 
   .Review-container {
-    width: 100%;
-    overflow: hidden;
-    overscroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
   }
 
   .Reviews--quote {
